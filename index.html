@@ -13,16 +13,16 @@
         <div class="flex flex-col md:flex-row  md:justify-between items-center p-4">
             <div class="flex gap-2 justify-center items-center">
                 <img src="./img/logo.png" alt="logo">
-                <p class="text-white font-bold leading-4 "><span class="text-blue-600">W</span>eather <br> Dasbor<span
+                <p class="text-white font-bold leading-4 "><span class="text-blue-600">W</span>eather <br> Dashbor<span
                         class="text-blue-600">d</span></p>
 
             </div>
-            <div class="">
-                <label class="relative" for="search">
+            <div class="search">
+                <label class="relative" for="text">
                     <input class="bg-gray-400 px-4 py-2 rounded-lg text-white placeholder:text-white" type="search"
                         name="search" id="search" placeholder="Search Location ">
 
-                    <span class="absolute top-0 right-0">
+                    <span id="subBtn"  class="absolute pl-4 bg-carrent top-0 right-0">
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                             stroke="white" class="size-6">
                             <path stroke-linecap="round" stroke-linejoin="round"
@@ -44,7 +44,7 @@
                         </svg>
 
                     </span>
-                    <h1 class="text-white text-6xl ">40°</h1>
+                    <h1 id="temp" class="text-white text-6xl ">40°c</h1>
                 </div>
                 <div class="">
                     <div class="flex items-center ">
@@ -58,7 +58,7 @@
                             </svg>
 
                         </span>
-                        <h2 class="text-white text-2xl ">Dhamoirhat</h2>
+                        <h2 id="location" class="text-white text-2xl ">Dhamoirhat</h2>
                     </div>
                     <p class="text-white ">9:41 AM-Sunday,August 18,2024</p>
 
@@ -67,9 +67,9 @@
             <div class="w-[55%] p-6 space-y-4">
                 <h3 class="text-lg uppercase text-white text-center">the climate is mist</h3>
                 <div class="text-white flex justify-between items-center ">
-                    <p>Temp max</p>
+                    <p >Temp max</p>
                     <div class="flex items-center gap-2">
-                        <p>40.93°</p>
+                        <p id="tempMax">40.93°</p>
                         <span>
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                                 stroke="red" class="size-6">
@@ -83,7 +83,7 @@
                 <div class="text-white flex justify-between items-center">
                     <p>Temp min</p>
                     <div class="flex items-center gap-2">
-                        <p>30.93°</p>
+                        <p id="tempMin">30.93°</p>
                         <span>
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                                 stroke="blue" class="size-6">
@@ -97,7 +97,7 @@
                 <div class="text-white flex justify-between items-center">
                     <p>Humadity</p>
                     <div class="flex items-center gap-2">
-                        <p>51%</p>
+                        <p id="humadity">51%</p>
                         <span>
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
                                 <path stroke-linecap="round" stroke-linejoin="round" d="M12 18v-5.25m0 0a6.01 6.01 0 0 0 1.5-.189m-1.5.189a6.01 6.01 0 0 1-1.5-.189m3.75 7.478a12.06 12.06 0 0 1-4.5 0m3.75 2.383a14.406 14.406 0 0 1-3 0M14.25 18v-.192c0-.983.658-1.823 1.508-2.316a7.5 7.5 0 1 0-7.517 0c.85.493 1.509 1.333 1.509 2.316V18" />
@@ -110,7 +110,7 @@
                 <div class="text-white flex justify-between items-center">
                     <p>Cludy</p>
                     <div class="flex items-center gap-2">
-                        <p>2%</p>
+                        <p>--%</p>
                         <span>
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
                                 <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 15a4.5 4.5 0 0 0 4.5 4.5H18a3.75 3.75 0 0 0 1.332-7.257 3 3 0 0 0-3.758-3.848 5.25 5.25 0 0 0-10.233 2.33A4.502 4.502 0 0 0 2.25 15Z" />
@@ -123,7 +123,7 @@
                 <div class="text-white flex justify-between items-center">
                     <p>Wind</p>
                     <div class="flex items-center gap-2">
-                        <p>3.6Km/h</p>
+                        <p id="wind">3.6Km/h</p>
                         <span>
                             
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
@@ -137,7 +137,7 @@
             </div>
         </div>
     </div>
-
+<script src="./script.js"></script>
 </body>
 
 </html>
